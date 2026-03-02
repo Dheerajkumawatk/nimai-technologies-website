@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Building a fully responsive, SEO-optimized corporate website for Nimai Technologies Private Limited — an AI-powered Education Technology company. The site features a modern glassmorphism/indigo-blue design, 6 main sections (Hero, About, Services, Why Choose Us, Contact, Footer), WhatsApp integration for all CTAs and contact form submissions, structured schema markup, Open Graph tags, sitemap.xml, and robots.txt. Built with hard-coded HTML5, CSS3, and Vanilla JavaScript.",
+  "architectural_notes": [
+    "Hard-coded HTML5/CSS3/Vanilla JS only — no frameworks or website builders",
+    "Mobile-first responsive design with glassmorphism and corporate blue + deep indigo gradient theme",
+    "WhatsApp integration via wa.me links for all service CTAs and contact form submissions",
+    "Separate files: index.html, style.css, script.js, plus sitemap.xml and robots.txt"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Futuristic dark blue and deep indigo abstract hero background with glowing neural network node connections, subtle grid lines, and geometric tech shapes (hero-bg.dim_1920x1080.png)",
+  "existing_features": [
+    {
+      "id": "feature-implement-a-sticky-header-navigation-bar-with-the-nimai-technologies-private-limited-brand-name-logo-on-the-left-and-navigation-links-home-about-services-why-choose-us-contact-on-the-right-include-a-hamburger-menu-for-mobile-viewports-apply-glassmorphism-styling-with-a-corporate-blue-deep-indigo-color-palette",
+      "title": "Implement a sticky header navigation bar with the Nimai Technologies Private Limited brand name/logo on the left and navigation links (Home, About, Services, Why Choose Us, Contact) on the right. Include a hamburger menu for mobile viewports. Apply glassmorphism styling with a corporate blue + deep indigo color palette.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-hero-section-with-h1-headline-revolutionizing-institutional-intelligence-with-ai-a-subheading-empowering-business-schools-agencies-with-smart-automation-predictive-intelligence-a-primary-cta-button-request-institutional-demo-linking-to-the-contact-section-a-secondary-cta-button-talk-to-our-ai-experts-linking-to-whatsapp-https-wa-me-91xxxxxxxxxx-text-hello-20nimai-20technologies-2c-20i-20would-20like-20to-20talk-20to-20your-20ai-20experts-and-a-subtle-animated-gradient-or-tech-inspired-particle-grid-background",
+      "title": "Build a Hero section with: H1 headline 'Revolutionizing Institutional Intelligence with AI', a subheading 'Empowering Business Schools & Agencies with Smart Automation & Predictive Intelligence', a primary CTA button 'Request Institutional Demo' linking to the Contact section, a secondary CTA button 'Talk to Our AI Experts' linking to WhatsApp (https://wa.me/91XXXXXXXXXX?text=Hello%20Nimai%20Technologies%2C%20I%20would%20like%20to%20talk%20to%20your%20AI%20Experts.), and a subtle animated gradient or tech-inspired particle/grid background.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-us-section-with-h2-title-bridging-traditional-pedagogy-with-cutting-edge-ai-include-descriptive-paragraphs-covering-domain-expertise-in-education-institutional-consulting-ai-driven-transformation-secure-data-architecture-ethical-ai-compliance-and-a-vision-statement-about-reducing-administrative-burden-and-maximizing-student-learning-impact-include-3-highlight-cards-labeled-innovation-security-and-institutional-growth-each-with-a-relevant-icon-and-short-description",
+      "title": "Build an About Us section with H2 title 'Bridging Traditional Pedagogy with Cutting-Edge AI'. Include descriptive paragraphs covering: domain expertise in education & institutional consulting, AI-driven transformation, secure data architecture, ethical AI compliance, and a vision statement about reducing administrative burden and maximizing student learning impact. Include 3 highlight cards labeled 'Innovation', 'Security', and 'Institutional Growth', each with a relevant icon and short description.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-services-section-with-h2-title-our-services-display-5-service-cards-each-with-a-title-short-description-and-a-learn-more-or-get-started-cta-button-that-opens-whatsapp-with-a-pre-filled-message-in-the-format-hello-nimai-technologies-i-am-interested-in-service-name-please-share-more-details-the-five-services-are-1-custom-llm-integration-for-institutions-2-admission-automation-smart-application-filtering-3-predictive-analytics-for-student-success-4-ai-powered-academic-intelligence-dashboard-5-data-security-compliance-architecture-whatsapp-base-url-https-wa-me-91xxxxxxxxxx",
+      "title": "Build a Services section with H2 title 'Our Services'. Display 5 service cards, each with a title, short description, and a 'Learn More' or 'Get Started' CTA button that opens WhatsApp with a pre-filled message in the format: 'Hello Nimai Technologies, I am interested in [Service Name]. Please share more details.' The five services are: (1) Custom LLM Integration for Institutions, (2) Admission Automation & Smart Application Filtering, (3) Predictive Analytics for Student Success, (4) AI-powered Academic Intelligence Dashboard, (5) Data Security & Compliance Architecture. WhatsApp base URL: https://wa.me/91XXXXXXXXXX",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-why-choose-us-section-with-h2-title-why-choose-nimai-technologies-display-5-feature-highlights-as-icon-title-short-description-cards-1-reduced-administrative-workload-2-ai-driven-decision-making-3-secure-infrastructure-4-future-proof-technology-5-scalable-institutional-solutions",
+      "title": "Build a 'Why Choose Us' section with H2 title 'Why Choose Nimai Technologies'. Display 5 feature highlights as icon + title + short description cards: (1) Reduced Administrative Workload, (2) AI-Driven Decision Making, (3) Secure Infrastructure, (4) Future-Proof Technology, (5) Scalable Institutional Solutions.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-section-with-h2-title-get-in-touch-include-a-form-with-fields-institution-name-contact-person-email-phone-and-message-on-form-submission-instead-of-sending-an-email-construct-a-whatsapp-url-with-all-form-field-values-auto-filled-into-a-pre-formatted-message-and-redirect-the-user-to-that-whatsapp-link-whatsapp-base-url-https-wa-me-91xxxxxxxxxx-also-include-a-direct-whatsapp-cta-button-on-the-page",
+      "title": "Build a Contact section with H2 title 'Get In Touch'. Include a form with fields: Institution Name, Contact Person, Email, Phone, and Message. On form submission, instead of sending an email, construct a WhatsApp URL with all form field values auto-filled into a pre-formatted message and redirect the user to that WhatsApp link. WhatsApp base URL: https://wa.me/91XXXXXXXXXX. Also include a direct WhatsApp CTA button on the page.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-footer-with-nimai-technologies-private-limited-company-name-quick-links-column-home-about-services-why-choose-us-contact-services-links-column-listing-all-5-services-a-whatsapp-contact-button-copyright-notice-and-links-to-privacy-policy-and-terms-conditions-dummy-pages-create-two-stub-pages-privacy-policy-and-terms-and-conditions-with-placeholder-legal-text",
+      "title": "Build a Footer with: Nimai Technologies Private Limited company name, Quick Links column (Home, About, Services, Why Choose Us, Contact), Services Links column listing all 5 services, a WhatsApp contact button, copyright notice, and links to Privacy Policy and Terms & Conditions dummy pages. Create two stub pages (privacy-policy and terms-and-conditions) with placeholder legal text.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-full-seo-setup-across-all-pages-add-a-descriptive-meta-title-nimai-technologies-ai-powered-institutional-intelligence-platform-meta-description-targeting-keywords-ai-for-business-schools-institutional-ai-platform-education-ai-automation-ai-admission-system-academic-predictive-analytics-open-graph-tags-og-title-og-description-og-type-og-url-og-image-twitter-card-meta-tags-json-ld-organization-schema-markup-proper-h1-h2-h3-heading-hierarchy-throughout-and-a-favicon-generate-a-sitemap-xml-and-robots-txt-in-the-public-root",
+      "title": "Implement full SEO setup across all pages: add a descriptive meta title ('Nimai Technologies | AI-Powered Institutional Intelligence Platform'), meta description targeting keywords (AI for Business Schools, Institutional AI Platform, Education AI Automation, AI Admission System, Academic Predictive Analytics), Open Graph tags (og:title, og:description, og:type, og:url, og:image), Twitter Card meta tags, JSON-LD Organization schema markup, proper H1/H2/H3 heading hierarchy throughout, and a favicon. Generate a sitemap.xml and robots.txt in the public root.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-design-system-corporate-blue-1e3a8a-range-and-deep-indigo-312e81-4f46e5-range-gradient-theme-glassmorphism-cards-frosted-glass-effect-with-backdrop-filter-clean-whitespace-smooth-scroll-behavior-subtle-css-entrance-animations-fade-in-slide-up-on-scroll-hover-lift-animations-on-cards-and-buttons-professional-sans-serif-typography-e-g-inter-or-similar-and-consistent-spacing-throughout-all-sections",
+      "title": "Apply a cohesive visual design system: corporate blue (#1E3A8A range) and deep indigo (#312E81 / #4F46E5 range) gradient theme, glassmorphism cards (frosted glass effect with backdrop-filter), clean whitespace, smooth scroll behavior, subtle CSS entrance animations (fade-in / slide-up on scroll), hover lift animations on cards and buttons, professional sans-serif typography (e.g., Inter or similar), and consistent spacing throughout all sections.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-a-hero-background-image-a-futuristic-tech-inspired-dark-blue-indigo-abstract-pattern-with-subtle-glowing-neural-network-nodes-grid-lines-and-geometric-shapes-suitable-as-a-full-width-section-background",
+      "title": "Generate a hero background image: a futuristic tech-inspired dark blue/indigo abstract pattern with subtle glowing neural network nodes, grid lines, and geometric shapes suitable as a full-width section background.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with animated gradient background, bold headline, and two CTA buttons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "About Us section with 3 highlight cards (Innovation, Security, Institutional Growth)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Services section with 5 services, each with WhatsApp CTA pre-filled message",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Why Choose Us section with 5 feature highlights",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Contact form that submits via WhatsApp with auto-filled user details",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Footer with quick links, services links, WhatsApp button, Privacy Policy and T&C dummy pages",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Full SEO setup: meta tags, Open Graph, schema markup, sitemap.xml, robots.txt",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Nimai Technologies Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

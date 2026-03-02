@@ -1,0 +1,253 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Nimai Technologies — AI EdTech Corporate Website",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Implement sticky glassmorphism header navigation with mobile hamburger menu",
+      "acceptanceCriteria": [
+        "Header remains fixed at the top while scrolling on all screen sizes",
+        "Navigation links smooth-scroll to the corresponding section",
+        "Hamburger menu appears on screens below 768px and toggles a mobile nav drawer",
+        "Header uses glassmorphism backdrop-filter with blue/indigo gradient tones"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "create",
+          "description": "Create sticky header component with Nimai Technologies branding on the left and navigation links (Home, About, Services, Why Choose Us, Contact) on the right. Implement smooth-scroll behavior for navigation links. Include hamburger menu toggle for mobile viewports below 768px. Apply glassmorphism styling with backdrop-filter, semi-transparent background, and corporate blue/indigo gradient tones."
+        },
+        {
+          "path": "frontend/src/components/MobileNav.tsx",
+          "operation": "create",
+          "description": "Create mobile navigation drawer component that slides in from the side when hamburger menu is clicked. Include the same navigation links as desktop header with smooth-scroll behavior. Add close button and overlay backdrop. Style consistently with glassmorphism theme."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Header component at the top of the application layout. Ensure it remains fixed during scroll across all sections."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add global smooth-scroll behavior (scroll-behavior: smooth) and define CSS custom properties for corporate blue (#1E3A8A) and deep indigo (#312E81, #4F46E5) gradient palette."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build Hero section with headline, subheading, CTAs, and animated tech background",
+      "acceptanceCriteria": [
+        "H1 text matches exactly: 'Revolutionizing Institutional Intelligence with AI'",
+        "Subheading text is present and readable on all screen sizes",
+        "Primary CTA scrolls to the Contact section",
+        "Secondary CTA opens WhatsApp with the pre-filled message",
+        "Background animation runs smoothly without causing layout shift"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create Hero section component with H1 headline 'Revolutionizing Institutional Intelligence with AI', subheading 'Empowering Business Schools & Agencies with Smart Automation & Predictive Intelligence', primary CTA button 'Request Institutional Demo' that smooth-scrolls to Contact section, and secondary CTA button 'Talk to Our AI Experts' linking to WhatsApp (https://wa.me/91XXXXXXXXXX?text=Hello%20Nimai%20Technologies%2C%20I%20would%20like%20to%20talk%20to%20your%20AI%20Experts.). Set background to use the generated hero background image from frontend/public/assets/generated/hero-bg.dim_1920x1080.png with subtle gradient overlay. Add CSS animation for smooth fade-in entrance."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Hero component immediately after Header in the main application layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build About Us section with domain expertise content and three highlight cards",
+      "acceptanceCriteria": [
+        "Section has proper H2 heading matching the specified title",
+        "All five content themes (expertise, transformation, security, ethics, vision) are addressed in the copy",
+        "Three cards for Innovation, Security, and Institutional Growth are displayed in a responsive grid",
+        "Cards have icons, titles, and short descriptions"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "create",
+          "description": "Create About Us section with H2 title 'Bridging Traditional Pedagogy with Cutting-Edge AI'. Include descriptive paragraphs covering domain expertise in education & institutional consulting, AI-driven transformation, secure data architecture, ethical AI compliance, and vision statement about reducing administrative burden. Display three highlight cards in a responsive grid (1 column mobile, 3 columns desktop) labeled 'Innovation', 'Security', and 'Institutional Growth', each with an icon and short description. Apply glassmorphism card styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render About component after Hero section with proper section ID 'about' for navigation anchor."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build Services section with five service cards and WhatsApp CTAs",
+      "acceptanceCriteria": [
+        "All 5 service cards are rendered with title, description, and CTA button",
+        "Each CTA button opens a WhatsApp link with the correct pre-filled message substituting the actual service name",
+        "Cards display in a responsive grid (1 column mobile, 2–3 columns desktop)",
+        "Service names match the specified list exactly"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Services.tsx",
+          "operation": "create",
+          "description": "Create Services section with H2 title 'Our Services'. Display 5 service cards in a responsive grid (1 column mobile, 2-3 columns desktop): (1) Custom LLM Integration for Institutions, (2) Admission Automation & Smart Application Filtering, (3) Predictive Analytics for Student Success, (4) AI-powered Academic Intelligence Dashboard, (5) Data Security & Compliance Architecture. Each card includes title, short description, and CTA button that opens WhatsApp link (https://wa.me/91XXXXXXXXXX) with pre-filled message format: 'Hello Nimai Technologies, I am interested in [Service Name]. Please share more details.' Apply glassmorphism card styling with hover lift animations."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Services component after About section with proper section ID 'services' for navigation anchor."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build Why Choose Us section with five feature highlight cards",
+      "acceptanceCriteria": [
+        "All 5 feature highlights are rendered with icon, title, and description",
+        "Section has a clear H2 heading",
+        "Layout is responsive across mobile and desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/WhyChooseUs.tsx",
+          "operation": "create",
+          "description": "Create Why Choose Us section with H2 title 'Why Choose Nimai Technologies'. Display 5 feature highlights in a responsive grid (1 column mobile, 2-3 columns desktop): (1) Reduced Administrative Workload, (2) AI-Driven Decision Making, (3) Secure Infrastructure, (4) Future-Proof Technology, (5) Scalable Institutional Solutions. Each card includes an icon, title, and short description. Apply glassmorphism card styling with hover animations."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render WhyChooseUs component after Services section with proper section ID 'why-choose-us' for navigation anchor."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build Contact section with form that redirects to WhatsApp with auto-filled message",
+      "acceptanceCriteria": [
+        "Form renders all 5 fields: Institution Name, Contact Person, Email, Phone, Message",
+        "On submit, a WhatsApp URL is constructed with all field values included in the message text",
+        "User is redirected to the WhatsApp link on submission",
+        "Basic client-side validation prevents submission with empty required fields"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "create",
+          "description": "Create Contact section with H2 title 'Get In Touch'. Include a form with fields: Institution Name, Contact Person, Email, Phone, and Message. Implement client-side validation to ensure all required fields are filled. On form submission, construct a WhatsApp URL (https://wa.me/91XXXXXXXXXX) with all form field values formatted into the message text, then redirect user to that URL. Include a direct WhatsApp CTA button on the page. Apply glassmorphism styling to form container."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Contact component after WhyChooseUs section with proper section ID 'contact' for navigation anchor."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Build footer with company info, navigation links, and create privacy/terms stub pages",
+      "acceptanceCriteria": [
+        "Footer contains company name, two link columns, WhatsApp button, and copyright line",
+        "Privacy Policy and Terms & Conditions links are present and navigate to their respective stub pages",
+        "Stub pages include placeholder content and a back/home navigation link",
+        "Footer is responsive and stacks columns on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create Footer component with Nimai Technologies Private Limited company name, Quick Links column (Home, About, Services, Why Choose Us, Contact), Services Links column listing all 5 services, WhatsApp contact button (https://wa.me/91XXXXXXXXXX), copyright notice, and links to Privacy Policy and Terms & Conditions pages. Use responsive layout that stacks columns on mobile. Apply glassmorphism styling consistent with site theme."
+        },
+        {
+          "path": "frontend/src/pages/PrivacyPolicy.tsx",
+          "operation": "create",
+          "description": "Create Privacy Policy stub page with placeholder legal text, H1 heading 'Privacy Policy', and navigation link back to home. Apply consistent site styling."
+        },
+        {
+          "path": "frontend/src/pages/TermsAndConditions.tsx",
+          "operation": "create",
+          "description": "Create Terms & Conditions stub page with placeholder legal text, H1 heading 'Terms & Conditions', and navigation link back to home. Apply consistent site styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Footer component at the bottom of the application layout. Set up React Router routes for /privacy-policy and /terms-and-conditions pages."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Implement comprehensive SEO setup with meta tags, schema markup, and site files",
+      "acceptanceCriteria": [
+        "Meta title and description are present in the HTML head",
+        "Open Graph and Twitter Card meta tags are present",
+        "JSON-LD Organization schema is embedded in a <script type='application/ld+json'> block",
+        "Headings follow a logical H1 > H2 > H3 hierarchy with no skipped levels",
+        "sitemap.xml and robots.txt files are present in the public directory",
+        "A favicon is linked in the HTML head"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add comprehensive SEO meta tags to HTML head: meta title 'Nimai Technologies | AI-Powered Institutional Intelligence Platform', meta description targeting keywords (AI for Business Schools, Institutional AI Platform, Education AI Automation, AI Admission System, Academic Predictive Analytics), Open Graph tags (og:title, og:description, og:type, og:url, og:image), Twitter Card meta tags, and favicon link. Embed JSON-LD Organization schema markup in a script tag."
+        },
+        {
+          "path": "frontend/public/sitemap.xml",
+          "operation": "create",
+          "description": "Generate sitemap.xml listing all main pages (homepage, privacy-policy, terms-and-conditions) with proper XML structure and URLs."
+        },
+        {
+          "path": "frontend/public/robots.txt",
+          "operation": "create",
+          "description": "Create robots.txt file allowing all user agents to crawl the site and referencing the sitemap location."
+        },
+        {
+          "path": "frontend/public/favicon.ico",
+          "operation": "create",
+          "description": "Add a favicon file (can be a simple blue/indigo colored icon representing Nimai Technologies)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Apply cohesive visual design system with blue/indigo gradient theme and animations",
+      "acceptanceCriteria": [
+        "Blue and indigo gradient palette is applied consistently across the site",
+        "Cards use glassmorphism styling with visible backdrop-filter or semi-transparent backgrounds",
+        "Smooth scroll is enabled site-wide",
+        "Cards and buttons have visible hover animations",
+        "Typography is clean, professional, and readable at all breakpoints"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Implement cohesive design system: define CSS custom properties for corporate blue (#1E3A8A range) and deep indigo (#312E81, #4F46E5 range) gradient theme. Add global styles for smooth scroll behavior. Define reusable glassmorphism card classes with backdrop-filter, frosted glass effect, and semi-transparent backgrounds. Add CSS animations for fade-in, slide-up entrance effects, and hover lift animations for cards and buttons. Set up professional sans-serif typography (Inter or system font stack) with consistent spacing variables."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind configuration with custom color palette for corporate blue and deep indigo shades. Add custom animation utilities for entrance effects (fade-in, slide-up) and hover animations. Configure backdrop-blur utilities for glassmorphism effects."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Wire generated hero background image into Hero section as static asset",
+      "acceptanceCriteria": [
+        "Hero background image is referenced as a static asset in frontend/public/assets/generated/",
+        "Image renders without distortion at full viewport width on both desktop and mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update Hero component to reference the generated hero background image at frontend/public/assets/generated/hero-bg.dim_1920x1080.png as the section background. Apply CSS properties to ensure image covers full width without distortion (background-size: cover, background-position: center). Layer a subtle gradient overlay on top for text readability."
+        }
+      ]
+    }
+  ]
+}

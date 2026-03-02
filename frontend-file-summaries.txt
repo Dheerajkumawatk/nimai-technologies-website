@@ -1,0 +1,19 @@
+{
+  "frontend/index.html": "Full SEO-optimized HTML entry point with meta title, description, Open Graph tags, Twitter Card tags, JSON-LD Organization schema markup, Google Fonts preload, and favicon link for Nimai Technologies.",
+  "frontend/public/favicon.svg": "SVG favicon with Nimai Technologies branding — dark blue background with indigo neural network path icon.",
+  "frontend/public/sitemap.xml": "XML sitemap listing homepage, privacy-policy, and terms-and-conditions pages with proper priorities and change frequencies.",
+  "frontend/public/robots.txt": "Robots.txt allowing all crawlers and referencing the sitemap URL.",
+  "frontend/src/index.css": "Complete design system with OKLCH color tokens for corporate blue/deep indigo palette, glassmorphism card utilities, gradient text helpers, CTA button styles, hero gradient animation, neural network canvas, floating orb animations, fade-in/slide-up entrance effects, and form input styles.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Inter/Space Grotesk font families, brand blue/indigo/navy color palette, WhatsApp green, custom shadow tokens (glow, card), and animation keyframes for fade-in-up, float, and pulse-glow effects.",
+  "frontend/src/App.tsx": "Main app with TanStack Router setup — root layout with Header/Outlet, home page composing all sections, and routes for /privacy-policy and /terms-and-conditions.",
+  "frontend/src/components/Header.tsx": "Sticky glassmorphism header with Nimai Technologies logo/brand, desktop navigation with smooth-scroll links, mobile hamburger menu with slide-in drawer, and scroll-aware background transition.",
+  "frontend/src/components/Hero.tsx": "Full-viewport hero section with animated neural network canvas, floating orbs, hero background image overlay, H1 headline, subheading, primary CTA (scroll to contact), secondary CTA (WhatsApp), and stats row.",
+  "frontend/src/components/About.tsx": "About Us section with H2 heading, two-column layout (content + stats card), four pillar checklist, and three glassmorphism highlight cards — `flex-shrink-0` replaced with `shrink-0`.",
+  "frontend/src/components/Services.tsx": "Services section with five glassmorphism service cards (LLM Integration, Admission Automation, Predictive Analytics, AI Dashboard, Data Security), each with icon, description, and WhatsApp CTA button with pre-filled service-specific message.",
+  "frontend/src/components/WhyChooseUs.tsx": "Dark-themed Why Choose Us section with five feature cards (Reduced Workload, AI Decision Making, Secure Infrastructure, Future-Proof Tech, Scalable Solutions), each with icon, stat, and description, plus four trust badge tiles.",
+  "frontend/src/components/Contact.tsx": "Contact section with info panel (WhatsApp/email/phone/location links) and a validated form (Institution Name, Contact Person, Email, Phone, Message) that constructs and opens a WhatsApp URL with all field values on submission.",
+  "frontend/src/components/Footer.tsx": "Dark gradient footer with brand logo, Quick Links, Services Links (WhatsApp-linked), WhatsApp CTA, copyright, Privacy/T&C links, and caffeine.ai attribution — `flex-shrink-0` replaced with `shrink-0`.",
+  "frontend/src/pages/PrivacyPolicy.tsx": "Privacy Policy stub page with dark gradient header, H1 heading, and six sections of placeholder legal content — removed conflicting `max-w-none` class from the prose wrapper.",
+  "frontend/src/pages/TermsAndConditions.tsx": "Terms & Conditions stub page with dark gradient header, H1 heading, eight sections of placeholder legal content, and back-to-home navigation link.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file — no backend queries needed as all interactions are client-side WhatsApp redirects."
+}

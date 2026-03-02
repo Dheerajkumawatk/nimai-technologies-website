@@ -1,0 +1,265 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-02T06:32:24.029Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 10,
+    "implemented": 10,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Implement a sticky header navigation bar with the Nimai Technologies Private Limited brand name/logo on the left and navigation links (Home, About, Services, Why Choose Us, Contact) on the right. Include a hamburger menu for mobile viewports. Apply glassmorphism styling with a corporate blue + deep indigo color palette.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Header.tsx",
+          "frontend/src/components/MobileNav.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Header.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Generate a hero background image: a futuristic tech-inspired dark blue/indigo abstract pattern with subtle glowing neural network nodes, grid lines, and geometric shapes suitable as a full-width section background.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Hero.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Hero.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Build a Hero section with: H1 headline 'Revolutionizing Institutional Intelligence with AI', a subheading 'Empowering Business Schools & Agencies with Smart Automation & Predictive Intelligence', a primary CTA button 'Request Institutional Demo' linking to the Contact section, a secondary CTA button 'Talk to Our AI Experts' linking to WhatsApp (https://wa.me/91XXXXXXXXXX?text=Hello%20Nimai%20Technologies%2C%20I%20would%20like%20to%20talk%20to%20your%20AI%20Experts.), and a subtle animated gradient or tech-inspired particle/grid background.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Build an About Us section with H2 title 'Bridging Traditional Pedagogy with Cutting-Edge AI'. Include descriptive paragraphs covering: domain expertise in education & institutional consulting, AI-driven transformation, secure data architecture, ethical AI compliance, and a vision statement about reducing administrative burden and maximizing student learning impact. Include 3 highlight cards labeled 'Innovation', 'Security', and 'Institutional Growth', each with a relevant icon and short description.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/About.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/About.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Build a Services section with H2 title 'Our Services'. Display 5 service cards, each with a title, short description, and a 'Learn More' or 'Get Started' CTA button that opens WhatsApp with a pre-filled message in the format: 'Hello Nimai Technologies, I am interested in [Service Name]. Please share more details.' The five services are: (1) Custom LLM Integration for Institutions, (2) Admission Automation & Smart Application Filtering, (3) Predictive Analytics for Student Success, (4) AI-powered Academic Intelligence Dashboard, (5) Data Security & Compliance Architecture. WhatsApp base URL: https://wa.me/91XXXXXXXXXX",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Services.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Services.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Build a 'Why Choose Us' section with H2 title 'Why Choose Nimai Technologies'. Display 5 feature highlights as icon + title + short description cards: (1) Reduced Administrative Workload, (2) AI-Driven Decision Making, (3) Secure Infrastructure, (4) Future-Proof Technology, (5) Scalable Institutional Solutions.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/WhyChooseUs.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/WhyChooseUs.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Build a Contact section with H2 title 'Get In Touch'. Include a form with fields: Institution Name, Contact Person, Email, Phone, and Message. On form submission, instead of sending an email, construct a WhatsApp URL with all form field values auto-filled into a pre-formatted message and redirect the user to that WhatsApp link. WhatsApp base URL: https://wa.me/91XXXXXXXXXX. Also include a direct WhatsApp CTA button on the page.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Build a Footer with: Nimai Technologies Private Limited company name, Quick Links column (Home, About, Services, Why Choose Us, Contact), Services Links column listing all 5 services, a WhatsApp contact button, copyright notice, and links to Privacy Policy and Terms & Conditions dummy pages. Create two stub pages (privacy-policy and terms-and-conditions) with placeholder legal text.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/PrivacyPolicy.tsx",
+          "frontend/src/pages/TermsAndConditions.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/PrivacyPolicy.tsx",
+          "frontend/src/pages/TermsAndConditions.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Implement full SEO setup across all pages: add a descriptive meta title ('Nimai Technologies | AI-Powered Institutional Intelligence Platform'), meta description targeting keywords (AI for Business Schools, Institutional AI Platform, Education AI Automation, AI Admission System, Academic Predictive Analytics), Open Graph tags (og:title, og:description, og:type, og:url, og:image), Twitter Card meta tags, JSON-LD Organization schema markup, proper H1/H2/H3 heading hierarchy throughout, and a favicon. Generate a sitemap.xml and robots.txt in the public root.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/public/sitemap.xml",
+          "frontend/public/robots.txt",
+          "frontend/public/favicon.ico"
+        ],
+        "matchedFiles": [
+          "frontend/index.html",
+          "frontend/public/sitemap.xml",
+          "frontend/public/robots.txt"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Apply a cohesive visual design system: corporate blue (#1E3A8A range) and deep indigo (#312E81 / #4F46E5 range) gradient theme, glassmorphism cards (frosted glass effect with backdrop-filter), clean whitespace, smooth scroll behavior, subtle CSS entrance animations (fade-in / slide-up on scroll), hover lift animations on cards and buttons, professional sans-serif typography (e.g., Inter or similar), and consistent spacing throughout all sections.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/hero-bg.dim_1920x1080.png",
+    "frontend/public/favicon.svg",
+    "frontend/public/robots.txt",
+    "frontend/public/sitemap.xml",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/About.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Services.tsx",
+    "frontend/src/components/WhyChooseUs.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/PrivacyPolicy.tsx",
+    "frontend/src/pages/TermsAndConditions.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

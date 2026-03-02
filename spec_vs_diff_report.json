@@ -1,0 +1,78 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-02T06:32:24.026Z",
+  "summary": "The diff implements a comprehensive AI EdTech corporate website for Nimai Technologies. All 10 requirements are substantially addressed. REQ-10 (hero background image as a static asset) is referenced in the code but the actual image file is not confirmed as added in the diff. All other requirements appear fully implemented with correct content, structure, and functionality.",
+  "missing_requirements": [
+    {
+      "id": "REQ-10",
+      "requirement": "Generate a hero background image as a static asset at frontend/public/assets/generated/hero-bg.dim_1920x1080.png",
+      "reason": "The Hero.tsx component references '/assets/generated/hero-bg.dim_1920x1080.png' and the file-summaries mention it, but the diff does not show the actual image file being added under frontend/public/assets/generated/. The omitted files note mentions 5 added files were excluded due to limits, so it may exist but cannot be confirmed from the diff.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "InternetIdentityProvider and Internet Computer (ICP) authentication infrastructure wrapping the entire app",
+      "reason": "The build request explicitly states no user authentication or login system is required and no backend logic. Yet main.tsx wraps the app in InternetIdentityProvider, and useActor.ts and useInternetIdentity.ts implement full ICP Internet Identity authentication logic with AuthClient, delegation identity, and actor creation.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/hooks/useInternetIdentity.ts"
+      ]
+    },
+    {
+      "description": "ICP backend canister stub (backend/main.mo)",
+      "reason": "The build request specifies no backend logic is required. A Motoko actor file was created for an ICP backend canister, which is not requested.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Stat metrics on WhyChooseUs feature cards (e.g., '80% Reduction in admin time', '3x Faster strategic decisions')",
+      "reason": "The build request only specifies icon + title + short description for the Why Choose Us cards. Numeric stat badges were added without being requested.",
+      "evidence": [
+        "frontend/src/components/WhyChooseUs.tsx"
+      ]
+    },
+    {
+      "description": "caffeine.ai attribution in the Footer",
+      "reason": "The file summary mentions a 'caffeine.ai attribution' in the Footer, which was not requested in the build specifications.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "frontend/src/components/Footer.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.82,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/favicon.svg",
+    "frontend/public/robots.txt",
+    "frontend/public/sitemap.xml",
+    "frontend/src/App.tsx",
+    "frontend/src/components/About.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Services.tsx",
+    "frontend/src/components/WhyChooseUs.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/PrivacyPolicy.tsx",
+    "frontend/src/pages/TermsAndConditions.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

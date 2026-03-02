@@ -1,0 +1,246 @@
+{
+  "kind": "build_request",
+  "title": "Nimai Technologies — AI EdTech Corporate Website",
+  "projectName": "Nimai Technologies",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a sticky header navigation bar with the Nimai Technologies Private Limited brand name/logo on the left and navigation links (Home, About, Services, Why Choose Us, Contact) on the right. Include a hamburger menu for mobile viewports. Apply glassmorphism styling with a corporate blue + deep indigo color palette.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Sticky header navigation",
+          "Corporate blue + deep indigo gradient theme",
+          "Fully responsive (mobile-first approach)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header remains fixed at the top while scrolling on all screen sizes",
+        "Navigation links smooth-scroll to the corresponding section",
+        "Hamburger menu appears on screens below 768px and toggles a mobile nav drawer",
+        "Header uses glassmorphism backdrop-filter with blue/indigo gradient tones"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a Hero section with: H1 headline 'Revolutionizing Institutional Intelligence with AI', a subheading 'Empowering Business Schools & Agencies with Smart Automation & Predictive Intelligence', a primary CTA button 'Request Institutional Demo' linking to the Contact section, a secondary CTA button 'Talk to Our AI Experts' linking to WhatsApp (https://wa.me/91XXXXXXXXXX?text=Hello%20Nimai%20Technologies%2C%20I%20would%20like%20to%20talk%20to%20your%20AI%20Experts.), and a subtle animated gradient or tech-inspired particle/grid background.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Bold headline: \"Revolutionizing Institutional Intelligence with AI\"",
+          "CTA Button: \"Request Institutional Demo\"",
+          "Secondary CTA: \"Talk to Our AI Experts\"",
+          "Background: Subtle animated gradient or tech-inspired pattern"
+        ]
+      },
+      "acceptanceCriteria": [
+        "H1 text matches exactly: 'Revolutionizing Institutional Intelligence with AI'",
+        "Subheading text is present and readable on all screen sizes",
+        "Primary CTA scrolls to the Contact section",
+        "Secondary CTA opens WhatsApp with the pre-filled message",
+        "Background animation runs smoothly without causing layout shift"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build an About Us section with H2 title 'Bridging Traditional Pedagogy with Cutting-Edge AI'. Include descriptive paragraphs covering: domain expertise in education & institutional consulting, AI-driven transformation, secure data architecture, ethical AI compliance, and a vision statement about reducing administrative burden and maximizing student learning impact. Include 3 highlight cards labeled 'Innovation', 'Security', and 'Institutional Growth', each with a relevant icon and short description.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Title: Bridging Traditional Pedagogy with Cutting-Edge AI",
+          "Add 3 highlight cards: Innovation | Security | Institutional Growth"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section has proper H2 heading matching the specified title",
+        "All five content themes (expertise, transformation, security, ethics, vision) are addressed in the copy",
+        "Three cards for Innovation, Security, and Institutional Growth are displayed in a responsive grid",
+        "Cards have icons, titles, and short descriptions"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build a Services section with H2 title 'Our Services'. Display 5 service cards, each with a title, short description, and a 'Learn More' or 'Get Started' CTA button that opens WhatsApp with a pre-filled message in the format: 'Hello Nimai Technologies, I am interested in [Service Name]. Please share more details.' The five services are: (1) Custom LLM Integration for Institutions, (2) Admission Automation & Smart Application Filtering, (3) Predictive Analytics for Student Success, (4) AI-powered Academic Intelligence Dashboard, (5) Data Security & Compliance Architecture. WhatsApp base URL: https://wa.me/91XXXXXXXXXX",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Each service must have a short description and a CTA button",
+          "Must redirect to WhatsApp with pre-filled message: \"Hello Nimai Technologies, I am interested in [Service Name]. Please share more details.\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 5 service cards are rendered with title, description, and CTA button",
+        "Each CTA button opens a WhatsApp link with the correct pre-filled message substituting the actual service name",
+        "Cards display in a responsive grid (1 column mobile, 2–3 columns desktop)",
+        "Service names match the specified list exactly"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Build a 'Why Choose Us' section with H2 title 'Why Choose Nimai Technologies'. Display 5 feature highlights as icon + title + short description cards: (1) Reduced Administrative Workload, (2) AI-Driven Decision Making, (3) Secure Infrastructure, (4) Future-Proof Technology, (5) Scalable Institutional Solutions.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "WHY CHOOSE US SECTION",
+          "Reduced Administrative Workload",
+          "AI-Driven Decision Making",
+          "Secure Infrastructure",
+          "Future-Proof Technology",
+          "Scalable Institutional Solutions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 5 feature highlights are rendered with icon, title, and description",
+        "Section has a clear H2 heading",
+        "Layout is responsive across mobile and desktop"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build a Contact section with H2 title 'Get In Touch'. Include a form with fields: Institution Name, Contact Person, Email, Phone, and Message. On form submission, instead of sending an email, construct a WhatsApp URL with all form field values auto-filled into a pre-formatted message and redirect the user to that WhatsApp link. WhatsApp base URL: https://wa.me/91XXXXXXXXXX. Also include a direct WhatsApp CTA button on the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Form submission must redirect to WhatsApp with auto-filled message including the entered details",
+          "Fields: Institution Name, Contact Person, Email, Phone, Message"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form renders all 5 fields: Institution Name, Contact Person, Email, Phone, Message",
+        "On submit, a WhatsApp URL is constructed with all field values included in the message text",
+        "User is redirected to the WhatsApp link on submission",
+        "Basic client-side validation prevents submission with empty required fields"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Build a Footer with: Nimai Technologies Private Limited company name, Quick Links column (Home, About, Services, Why Choose Us, Contact), Services Links column listing all 5 services, a WhatsApp contact button, copyright notice, and links to Privacy Policy and Terms & Conditions dummy pages. Create two stub pages (privacy-policy and terms-and-conditions) with placeholder legal text.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Company Name",
+          "Quick Links",
+          "Services Links",
+          "WhatsApp Button",
+          "Copyright",
+          "Privacy Policy (dummy page)",
+          "Terms & Conditions (dummy page)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer contains company name, two link columns, WhatsApp button, and copyright line",
+        "Privacy Policy and Terms & Conditions links are present and navigate to their respective stub pages",
+        "Stub pages include placeholder content and a back/home navigation link",
+        "Footer is responsive and stacks columns on mobile"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement full SEO setup across all pages: add a descriptive meta title ('Nimai Technologies | AI-Powered Institutional Intelligence Platform'), meta description targeting keywords (AI for Business Schools, Institutional AI Platform, Education AI Automation, AI Admission System, Academic Predictive Analytics), Open Graph tags (og:title, og:description, og:type, og:url, og:image), Twitter Card meta tags, JSON-LD Organization schema markup, proper H1/H2/H3 heading hierarchy throughout, and a favicon. Generate a sitemap.xml and robots.txt in the public root.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "SEO-friendly structure (semantic HTML, meta tags, Open Graph, structured data)",
+          "Schema markup for Organization",
+          "Open Graph tags",
+          "Sitemap.xml",
+          "Robots.txt",
+          "Keyword optimization: AI for Business Schools, Institutional AI Platform, Education AI Automation, AI Admission System, Academic Predictive Analytics"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Meta title and description are present in the HTML head",
+        "Open Graph and Twitter Card meta tags are present",
+        "JSON-LD Organization schema is embedded in a <script type='application/ld+json'> block",
+        "Headings follow a logical H1 > H2 > H3 hierarchy with no skipped levels",
+        "sitemap.xml and robots.txt files are present in the public directory",
+        "A favicon is linked in the HTML head"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Apply a cohesive visual design system: corporate blue (#1E3A8A range) and deep indigo (#312E81 / #4F46E5 range) gradient theme, glassmorphism cards (frosted glass effect with backdrop-filter), clean whitespace, smooth scroll behavior, subtle CSS entrance animations (fade-in / slide-up on scroll), hover lift animations on cards and buttons, professional sans-serif typography (e.g., Inter or similar), and consistent spacing throughout all sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Corporate blue + deep indigo gradient theme",
+          "glassmorphism / subtle gradients / minimal corporate aesthetic",
+          "Smooth hover animations",
+          "Professional and premium feel",
+          "Add smooth scrolling and subtle animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Blue and indigo gradient palette is applied consistently across the site",
+        "Cards use glassmorphism styling with visible backdrop-filter or semi-transparent backgrounds",
+        "Smooth scroll is enabled site-wide",
+        "Cards and buttons have visible hover animations",
+        "Typography is clean, professional, and readable at all breakpoints"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Generate a hero background image: a futuristic tech-inspired dark blue/indigo abstract pattern with subtle glowing neural network nodes, grid lines, and geometric shapes suitable as a full-width section background.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Background: Subtle animated gradient or tech-inspired pattern"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero background image is referenced as a static asset in frontend/public/assets/generated/",
+        "Image renders without distortion at full viewport width on both desktop and mobile"
+      ]
+    }
+  ],
+  "constraints": [
+    "WhatsApp number placeholder 91XXXXXXXXXX must be kept as a clearly visible placeholder in the code so it can be easily replaced with the real number before deployment.",
+    "No backend logic required — all form submissions and CTAs are handled client-side via WhatsApp URL redirects.",
+    "The corporate blue + deep indigo color palette is specified by the user and must be used; do not substitute other color schemes."
+  ],
+  "nonGoals": [
+    "No server-side form handling or email submission",
+    "No CMS or dynamic content management",
+    "No user authentication or login system",
+    "No database or backend data storage",
+    "No e-commerce or payment integration",
+    "No blog or news section unless explicitly requested later"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Futuristic dark blue and deep indigo abstract hero background with glowing neural network node connections, subtle grid lines, and geometric tech shapes (hero-bg.dim_1920x1080.png)"
+    ],
+    "edits": []
+  }
+}
